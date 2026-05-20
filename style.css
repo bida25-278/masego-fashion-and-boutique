@@ -250,24 +250,6 @@ ul{
 }
 /*--------media query for menu-------*/
 
-@media only screen and (max-width:  800px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-}
 .intro-text{
     text-align: left;
     font-size: 20px;
@@ -277,55 +259,114 @@ ul{
     max-width: 600px;
 }
 /*ABOUT US SECTION*/
-.about-section{
-    background-color: #f8d7da;
-    padding: 80px 40px;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Robot', sans-serif;
 }
-
-.about-container{
+body{
+    background-color: #ffd6d6;
+}
+.heading{
+    width: 90%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color:#000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
     margin: 0 auto;
-    gap: 80px;
+    background-color: #ff523b;
+}
+.heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .about-image{
     flex: 1;
-    max-width: 450px;
+    margin-right: 40px;
+    overflow: hidden;
 }
 .about-image img{
-    width: 100%;
+    max-width: 70%;
     height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 50%;
-    background-color: #fff;
+    display: block;
+    transition: 0.5s ease;
+}.about-image:hover img{
+    transform: scale(1.2);
 }
-/*RIGHT SIDE - TEXT*/
-.about-text{
+.about-content{
     flex: 1;
-    max-width: 500px;
 }
-.about-text h2{
-    font-size: 28px;
-    font-weight: 700;
-    color:#333;
-    margin: 0 0 10px;
-    letter-spacing: 1px
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
 }
-.underline{
-    width: 150px;
-    height: 3px;
-    background-color: #ff523b;
-    margin-bottom: 25px;
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
 }
-.about-text p{
-    font-size: 16px;
-    line-height: 1.7;
-    color: #555;
-    margin-right: 30px;
+
+@media screen and (max-width:768){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
 }
+
+
+
+
+
 
 /*Contact Page*/
 
