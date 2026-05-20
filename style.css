@@ -150,6 +150,7 @@ small{
 
 .testimonial{
     padding-top: 100px;
+    background-color: #fff;
 }
 .testimonial .col-3{
     text-align: center;
@@ -165,10 +166,6 @@ small{
 }
 .testimonial .col-3:hover{
     transform: translateY(-10px);
-}
-.fa.fa-quote-left{
-    font-size: 34px;
-    color: #ff523b;
 }
 .col-3 p{
     font-size: 12px;
@@ -333,7 +330,7 @@ ul{
 /*Contact Page*/
 
 body{
-    background: #f8d7da;
+    background: #ffd6d6;
     font-size: 14px;
 }
 .container{
@@ -423,7 +420,6 @@ tr td{
     align-items: center;
     justify-content: space-between;
     padding: 60px 40px;
-    background-color: #ffd6d6;
     min-height: 400px;
 }
 .hero-text{
