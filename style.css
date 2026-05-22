@@ -456,11 +456,12 @@ tr td{
 
 /*Feedback Page*/
 
-.hero{
+.Hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 60px 40px;
+    background-color: #ffd6d6;
     min-height: 400px;
 }
 .hero-text{
@@ -468,9 +469,10 @@ tr td{
     padding-right: 40px;
 }
 .hero-text h1{
-    font-size: 42px;
+    font-style: 42px;
     color: #000;
-    margin: 0 0 10px 0;
+    font-weight: 300;
+    margin: 0 0 20px 0;
 }
 .hero-text h2{
     font-size: 22px;
@@ -478,17 +480,17 @@ tr td{
     font-weight: 300;
     margin: 0 0 20px 0;
 }
-.hero-text p{
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 30px;
-}
-.cta-button{
+.cta-buuton:hover{
     display: inline-block;
-    
+    background-color: #d8758f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-.cta-button:hover{
+.cta-buuton:hover{
     background-color: #c71585;
 }
 
